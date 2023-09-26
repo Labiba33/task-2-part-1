@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive Web Design task</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        header {
+            background-color:blue;
+            color: greenyellow;
+            text-align: center;
+            padding: 20px;
+        }
+
+    
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            margin: 1em 2em;
+            column-count: 3;
+            width: 100%;
+            float: none;
+            column-width: 10em;
+            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        
+        }
+
+    
+        .column {
+            float: left;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+    
+        @media screen and (min-width: 80rem) {
+            .container {
+                width: 50%;
+
+            }
+            .item{
+                flex: 1;
+            }
+        }
+
+       
+        footer {
+            background-color: black;
+            color:greenyellow;
+            text-align: center;
+            padding: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Khair</h1>
+    </header>
+    <img src="bedchair.jpg"
+    <div class="container">
+        <div class="column">
+            
+        </div>
+        <div class="column">
+           
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Khair</p>
+    </footer>
+</body>
+</html>
